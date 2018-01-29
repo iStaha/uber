@@ -24,7 +24,7 @@ class LocationsController extends Controller
 
       /*  $locat = \App\Locations::all();*/
 
-         $locat =   \App\Locations::paginate(5);
+         $locat =   \App\locations::paginate(5);
       /*  return view('location');*/
 
         return view('location', compact('locat'));
@@ -44,7 +44,7 @@ class LocationsController extends Controller
 
 /*
   Appointment::create($request->all());*/
-    $loc = new \App\Locations;
+    $loc = new \App\locations;
     $loc->location = $request->loc;
     
    $loc->save();
@@ -65,7 +65,7 @@ class LocationsController extends Controller
     public function edit($id)
     {
 
-            $loc = \App\Locations::findOrFail($id);
+            $loc = \App\locations::findOrFail($id);
 
              //   dd($loc);
 
@@ -78,7 +78,7 @@ class LocationsController extends Controller
       public function update(Request $request, $id)
     {
 
-            $loc = \App\Locations::findOrFail($id);
+            $loc = \App\locations::findOrFail($id);
 
              //  dd($loc);
               $loc->location = $request->loc;
@@ -94,7 +94,7 @@ class LocationsController extends Controller
     public function destroy(Request $request, $id)
     {
 
-            $loc = \App\Locations::findOrFail($id);
+            $loc = \App\locations::findOrFail($id);
 
             //   die($loc);
            //   $loc->delete();
