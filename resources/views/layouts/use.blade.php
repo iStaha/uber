@@ -135,7 +135,7 @@
                          @else
                     <ul class="nav navbar-nav">
                       
-                         <li><a href="{{ route('location.index') }}">Locations</a></li>
+                         <li><a href="/admin/location">Locations</a></li>
                         <li><a href="/admin/bus">Bus</a></li>
                         <li><a href="/admin/route">Routes</a></li>
 
