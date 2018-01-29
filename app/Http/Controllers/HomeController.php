@@ -55,7 +55,7 @@ class HomeController extends Controller
         $seats = DB::table('routes')->where('depart', '=', $request->date)->sum('seats_booked');
 
 
-        $capacity = DB::table('routes')->sum('capacity');
+        $capacity = DB::table('routes')->where('depart', '=', $request->date)->sum('capacity');
 
         $total = DB::table('busses')->sum('seats');
 
