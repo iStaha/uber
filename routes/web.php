@@ -23,7 +23,7 @@ Route::resource('/location', 'LocationsController');
 Route::resource('/bus', 'BussesController');
 Route::get('/rout', 'RoutesController@index');
 Route::post('/rout', 'RoutesController@store');
-Route::get('/book', 'BookingsController@book')->name('book');
+Route::get('/book', 'BookingsController@index')->name('book');
 Route::post('/book', 'BookingsController@store')->name('book');
 Route::get('/booking/{id}', 'BookingsController@booking')->name('booking');
 Route::post('/booking', 'BookingsController@save');
