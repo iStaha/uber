@@ -94,7 +94,7 @@ class BookingsController extends Controller
      public function cancel($id)
     {
 
-           $b = \App\Bookings::findOrFail($id);
+           $b = \App\bookings::findOrFail($id);
            
         
       //   die($b); 
@@ -112,7 +112,7 @@ class BookingsController extends Controller
 
   $rot =Routes::where([['id', '=',$val[0]->id]])->first();
 
-  $bok =\App\Bookings::where([['id', '=',$id]])->first();
+  $bok =\App\bookings::where([['id', '=',$id]])->first();
 
   //die($bok);
 
@@ -188,7 +188,7 @@ public function save(Request $request)
 
      //   $bokings = \App\bookings::create($request->all());
 
-      $b = new \App\Bookings;
+      $b = new \App\bookings;
 
         $b->user_id =Auth::user()->id;
 

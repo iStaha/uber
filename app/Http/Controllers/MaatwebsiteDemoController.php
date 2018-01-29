@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 
 use Input;
 use App\locations;
-use App\Bookings;
+use App\bookings;
 use DB;
 use Excel;
 use Illuminate\Http\Request;
@@ -32,7 +32,7 @@ class  MaatwebsiteDemoController extends Controller
 
      public function bookings($type)
     {
-        $data = Bookings::get()->toArray();
+        $data = bookings::get()->toArray();
       //  dd($data);
         return Excel::create('itsolutionstuff_example', function($excel) use ($data) {
             $excel->sheet('mySheet', function($sheet) use ($data)
