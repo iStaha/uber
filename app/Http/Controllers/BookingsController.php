@@ -84,7 +84,7 @@ class BookingsController extends Controller
 
      public function see()
     {
-          $bookings = \App\Bookings::all();
+          $bookings = \App\bookings::all();
 
           
         return view('bookings', compact('bookings'));
