@@ -37,8 +37,8 @@
             
         @endif 
                         <div class="form">
-                            <h4 class="tal"><span class="head">Aa </span>dd Bus</h4>
-                            <form  action="/bus" method="post">
+                            <h4 class="tal"><span class="head">A </span>dd Bus</h4>
+                            <form  action="/admin/bus" method="post">
                                      {!! csrf_field() !!}
                                 <!--text field start-->
                                 <div class="form-group  col-md-6">

@@ -85,15 +85,13 @@
           
 									<tr>
 										<td>{{ $link->id }}</td>
-										<td>{{ $link->location }}</td>
+										<td>  {{ $link->location }}</td>
 
 										<td>  <a class="btn" href="{{ route('location.edit', $link->id) }}/"> <i class="fa fa-edit"> </i>
 										</a> 
 		 {!! Form::open(['method' => 'DELETE','class' => 'tac', 'route' => ['location.destroy', $link->id] ]) !!}								 
 			 <a class=""> <i class="fa fa-trash"> </i></a>
  {!! Form::close() !!}
-
-
 			</td>
 			
 									</tr>
