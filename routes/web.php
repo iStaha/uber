@@ -19,10 +19,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/home', 'HomeController@details')->name('home');
-Route::resource('admin/location', 'LocationsController');
-Route::resource('admin/bus', 'BussesController');
-Route::get('admin/route', 'RoutesController@index');
-Route::post('admin/route', 'RoutesController@store');
+Route::resource('/location', 'LocationsController');
+Route::resource('/bus', 'BussesController');
+Route::get('/route', 'RoutesController@index');
+Route::post('/route', 'RoutesController@store');
 Route::get('/book', 'BookingsController@book')->name('book');
 Route::post('/book', 'BookingsController@store')->name('route');
 Route::get('/booking/{id}', 'BookingsController@booking')->name('booking');
