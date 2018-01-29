@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 
 use Input;
-use App\Locations;
+use App\locations;
 use App\Bookings;
 use DB;
 use Excel;
@@ -20,7 +20,7 @@ class  MaatwebsiteDemoController extends Controller
 
     public function downloadExcel($type)
     {
-        $data = Locations::get()->toArray();
+        $data = locations::get()->toArray();
       //  dd($data);
         return Excel::create('itsolutionstuff_example', function($excel) use ($data) {
             $excel->sheet('mySheet', function($sheet) use ($data)
