@@ -19,7 +19,7 @@ class RoutesController extends Controller
        public function route()
     {
 
-        $locat = \App\Locations::all();
+        $locat = \App\locations::all();
         $buss = \App\Busses::all();
 
        /* $busses =   \App\Busses::paginate(5);*/
