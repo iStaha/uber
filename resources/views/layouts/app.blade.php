@@ -136,7 +136,7 @@
                     <ul class="nav navbar-nav">
                        
                          <li><a href="/home">Home</a></li>
-                        <li><a href="/books">Book</a></li>
+                        <li><a href="/book">Book</a></li>
                         <li><a href="/bookings">Bookings</a></li>
 
                     </ul>

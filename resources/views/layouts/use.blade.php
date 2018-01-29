@@ -137,7 +137,7 @@
                       
                          <li><a href="{{ route('location.index') }}">Locations</a></li>
                         <li><a href="/bus">Bus</a></li>
-                        <li><a href="/rout">Routes</a></li>
+                        <li><a href="/route">Routes</a></li>
 
                     </ul>
                   
