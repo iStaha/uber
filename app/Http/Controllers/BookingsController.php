@@ -27,7 +27,7 @@ class BookingsController extends Controller
 
 
          
-        $locat = \App\Locations::all();
+        $locat = \App\locations::all();
 
      //   $busses =   \App\Busses::paginate(5);
       /*  return view('location');*/
@@ -413,7 +413,7 @@ foreach ($val as $valu) {
     /*return redirect('/');
 */
    
-       $locat = \App\Locations::all();
+       $locat = \App\locations::all();
    // die($val);
     // dd($cars);
 
