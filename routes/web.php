@@ -19,12 +19,12 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/home', 'HomeController@details')->name('home');
-Route::resource('/location', 'LocationsController');
-Route::resource('/bus', 'BussesController');
+Route::resource('admin/location', 'LocationsController');
+Route::resource('admin/bus', 'BussesController');
 //Route::post('/bus', 'BussesController@store')->name('bus');
-Route::get('/route', 'RoutesController@index')->name('route');
-Route::post('/route', 'RoutesController@store')->name('route');
-Route::get('/book', 'BookingsController@index')->name('book');
+Route::get('admin/route', 'RoutesController@route')->name('route');
+Route::post('admin/route', 'RoutesController@store')->name('route');
+Route::get('/book', 'BookingsController@book')->name('book');
 Route::post('/book', 'BookingsController@store')->name('route');
 Route::get('/booking/{id}', 'BookingsController@booking')->name('booking');
 Route::post('/booking', 'BookingsController@save')->name('route');

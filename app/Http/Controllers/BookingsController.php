@@ -22,7 +22,7 @@ class BookingsController extends Controller
 
 
 
-       public function index()
+       public function book()
     {
 
 
