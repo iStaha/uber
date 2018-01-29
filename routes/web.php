@@ -21,8 +21,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/home', 'HomeController@details')->name('home');
 Route::resource('admin/location', 'LocationsController');
 Route::resource('admin/bus', 'BussesController');
-//Route::post('/bus', 'BussesController@store')->name('bus');
-Route::get('admin/route', 'RoutesController@route')->name('route');
+Route::get('admin/route', 'RoutesController@index')->name('route');
 Route::post('admin/route', 'RoutesController@store')->name('route');
 Route::get('/book', 'BookingsController@book')->name('book');
 Route::post('/book', 'BookingsController@store')->name('route');
@@ -30,7 +29,6 @@ Route::get('/booking/{id}', 'BookingsController@booking')->name('booking');
 Route::post('/booking', 'BookingsController@save')->name('route');
 Route::get('/bookings', 'BookingsController@see')->name('route');
 Route::any('/bookings/{id}', 'BookingsController@cancel');
-
 Route::get('downloadExcel/{type}', 'MaatwebsiteDemoController@downloadExcel');
 Route::any('downloadE/{type}', 'MaatwebsiteDemoController@downloadE');
 Route::any('downloadBookings/{type}', 'MaatwebsiteDemoController@bookings');

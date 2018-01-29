@@ -16,7 +16,7 @@ class RoutesController extends Controller
         $this->middleware('auth');
     }
 
-       public function route()
+       public function index()
     {
 
         $locat = \App\Locations::all();
